@@ -44,7 +44,11 @@ function numberPriority(number){
       const one = checkOne(numArray);
       finalArray.push(one);
     } else {
-      finalArray.push(number);
+      finalArray.push(numArray);
     }
     return finalArray;
   }
+
+function count(number) {
+  
+}

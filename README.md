@@ -22,6 +22,11 @@
     2. Number = 20
     3. Expected Output: boop!.
 
+  * Test: The program will check if a digit contains a 3 and return "Won't you be my neighbor?":
+    1. Code: 
+    2. Number = 30
+    3. Expected Output: Won't you be my neighbor?.
+
 ## Description
 
 This basic webpage contains a quick introduction on what I should learn during my tenure at Epicodus, as well as a list of my favorite places and picture of an adorable kitten.

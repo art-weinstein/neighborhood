@@ -21,4 +21,15 @@ function checkTwo(number){
 }
 
 
+function checkThree(number){
+  while(number >= 0) {
+    if(number.includes(3)){
+      return "Won't you be my neighbor?";
+    } else {
+      return number;
+    }
+  }
+}
+
+
 

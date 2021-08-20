@@ -26,6 +26,12 @@
     1. Code: 
     2. Number = 30
     3. Expected Output: Won't you be my neighbor?.
+    
+  * Test: The program will prioritize checkThree() function, then checkTwo function, then checkOne function:
+    1. Code: 
+    2. Number = 123
+    3. Expected Output: Won't you be my neighbor?.
+
 
 ## Description
 

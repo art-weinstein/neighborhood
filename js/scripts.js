@@ -32,11 +32,19 @@ function checkThree(number){
 }
 
 function numberPriority(number){
-  number = [];
-  for (let i = 0; i <= number[i]; i++){
-    if (checkThree(number[i])){
-      number.push(checkThree);
+  let numArray = number;
+  let finalArray = [];
+    if (numArray.includes("3")){
+      const three = checkThree(numArray);
+      finalArray.push(three);
+    } else if (numArray.includes("2")) {
+      const two = checkTwo(numArray);
+      finalArray.push(two);
+    } else if (numArray.includes(1)) {
+      const one = checkOne(numArray);
+      finalArray.push(one);
+    } else {
+      finalArray.push(number);
     }
+    return finalArray;
   }
-  return number;
-}

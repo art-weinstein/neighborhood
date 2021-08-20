@@ -31,5 +31,12 @@ function checkThree(number){
   }
 }
 
-
-
+function numberPriority(number){
+  number = [];
+  for (let i = 0; i <= number[i]; i++){
+    if (checkThree(number[i])){
+      number.push(checkThree);
+    }
+  }
+  return number;
+}

@@ -9,12 +9,18 @@
 * HTML
 * CSS
 
-## Tests
-  * Describe:  checkFive()
-  * Test: The program will check if a digit contains a five and return true:
+## Specs
+  * Describe:  checkOne()
+  * Test: The program will check if a digit contains a 1 and return "beep!":
     1. Code: 
-    2. Number = 25
-    3. Expected Output: True.
+    2. Number = 10
+    3. Expected Output: beep!.
+
+      * Describe:  checkOne()
+  * Test: The program will check if a digit contains a 2 and return "boop!":
+    1. Code: 
+    2. Number = 20
+    3. Expected Output: boop!.
 
 ## Description
 

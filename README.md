@@ -10,15 +10,13 @@
 * CSS
 
 ## Specs
-  * Describe:  checkOne()
   * Test: The program will check if a digit contains a 1 and return "beep!":
-    1. Code: 
+    1. Code: checkOne(); 
     2. Number = 10
     3. Expected Output: beep!.
 
-      * Describe:  checkOne()
   * Test: The program will check if a digit contains a 2 and return "boop!":
-    1. Code: 
+    1. Code: checkTwo();
     2. Number = 20
     3. Expected Output: boop!.
 
@@ -28,14 +26,26 @@
     3. Expected Output: Won't you be my neighbor?.
     
   * Test: The program will prioritize checkThree() function, then checkTwo function, then checkOne function:
-    1. Code: 
+    1. Code: checkThree()
     2. Number = 123
     3. Expected Output: Won't you be my neighbor?.
+
+    * Test: The program will loop sequential numbers up until the user's input
+    1. Code:   for (i=0; i<=numArray; i++){
+    finalArray.push(i);
+  }
+    2. Number = 5
+    3. Expected Output: [0, 1, 2, 3, 4, 5]
+  
+  * Test: The program will replace numbers in the sequence with parameters related to the helper functions.
+    1. Code: 
+    2. Number = 3
+    3. Expected Output: 0, 1, 2 , Won't you be my neighbor?
+
 
 
 ## Description
 
-This basic webpage contains a quick introduction on what I should learn during my tenure at Epicodus, as well as a list of my favorite places and picture of an adorable kitten.
 
 ## Setup/Installation Requirements
 
@@ -51,7 +61,7 @@ This basic webpage contains a quick introduction on what I should learn during m
 
 * [MIT License](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2021 Benjamin Wilson
+Copyright (c) 2021 Art Weinstein
 
 ## Contact Information
 

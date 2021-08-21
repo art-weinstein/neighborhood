@@ -10,16 +10,28 @@ function numberPriority(number){
   });
   let finalArray = stringArray.map(function(string) {
     if (string.includes("3")){
-      return "Won't you be my neighbor?";
+      string = "Won't you be my neighbor?"
+      return string;
     } else if (string.includes("2")) {
-      return "Boop!";
+      string = "Boop!"
+      return string;
     } else if (string.includes("1")) {
-      return "Beep!";
+      string = "Beep!"
+      return string;
     } else {
       return string;
     }
   });
-  return finalArray;
+  return finalArray.join(", ");
 }
 
 // UI logic
+$(document).ready(function(){
+  $("form#neighborhood").submit(function (event){
+    event.preventDefault();
+    const input = $("#number").val();
+    let string = numberPriority(input);
+    $(".output").text(string);
+    $(".output").show();
+  });
+});

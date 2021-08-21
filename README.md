@@ -10,23 +10,34 @@
 * CSS
 
 ## Specs
+  * Test: The program will check if a digit contains a 3 and return "Won't you be my neighbor?":
+    1. Code:   if (string.includes("3")){
+      return "Won't you be my neighbor?";
+    2. Number = 30
+    3. Expected Output: Won't you be my neighbor?.
+    
   * Test: The program will check if a digit contains a 1 and return "beep!":
-    1. Code: checkOne(); 
+    1. Code:if (string.includes("1")) {
+      return "Boop!";
     2. Number = 10
     3. Expected Output: beep!.
 
   * Test: The program will check if a digit contains a 2 and return "boop!":
-    1. Code: checkTwo();
+    1. Code: Code:if (string.includes("2")) {
     2. Number = 20
     3. Expected Output: boop!.
 
-  * Test: The program will check if a digit contains a 3 and return "Won't you be my neighbor?":
-    1. Code: 
-    2. Number = 30
-    3. Expected Output: Won't you be my neighbor?.
-    
-  * Test: The program will prioritize checkThree() function, then checkTwo function, then checkOne function:
-    1. Code: checkThree()
+
+  * Test: The program will prioritize coverting the number three, then two, then one subsequently. 
+    1. Code:  if (string.includes("3")){
+      return "Won't you be my neighbor?";
+    } else if (string.includes("2")) {
+      return "Boop!";
+    } else if (string.includes("1")) {
+      return "Beep!";
+    } else {
+      return string;
+    }
     2. Number = 123
     3. Expected Output: Won't you be my neighbor?.
 
@@ -37,11 +48,22 @@
     2. Number = 5
     3. Expected Output: [0, 1, 2, 3, 4, 5]
   
-  * Test: The program will replace numbers in the sequence with parameters related to the helper functions.
-    1. Code: 
+  * Test: The program will map the initial array of numbers to a new string array.
+  1. Code: let stringArray = initialArray.map(function(number){
+    return number.toString();
+  });
+  2. number: 5
+  3. Expected output ["0", "1", "2", "3", "4", "5"]
+
+  * Test: The program will replace numbers with words in the string through mapping to a final array.
+    1. Code: let finalArray = stringArray.map(function(string){}
+    2. Number = 3
+    3. Expected Output: 0, 1, 2 , Won't you be my neighbor?.
+
+  * Test: The program will implement the code into a "numberPriority function
+    1. Code: function numberPriority(number)
     2. Number = 3
     3. Expected Output: 0, 1, 2 , Won't you be my neighbor?
-
 
 
 ## Description
